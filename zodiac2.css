@@ -1,0 +1,129 @@
+
+
+body {
+    background-color: rgba(0, 0, 0, 0.981);
+    margin: 0; /* Remove default body margin */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: space-around; /* Adjust spacing between rows */
+    gap: 20px; /* Define the space between flex items */
+    padding: 20px; /* Add padding to the container to maintain spacing */
+    margin: 40px;
+}
+
+.card {
+    flex: calc(25% - 20px); /* Calculate the width of each card with gap included */
+    width: calc(25% - 20px); /* Define maximum width for each card */
+    height: 450px;
+    perspective: 1000px;
+    position: relative; /* Add position relative for absolute positioning of inner elements */
+}
+
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+     backface-visibility:hidden;
+     padding:2px;
+     border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    text-overflow: clip;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+
+  
+  .card h4, .card h5{
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    /* font-family: "Homemade Apple", cursive; */
+    font-family: "Gochi Hand", cursive;
+  }
+
+  .card p{
+    text-align: center;
+    margin: 7px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-weight: 600;
+    font-size:larger;
+    font-family: "Gloria Hallelujah", cursive;
+  }
+
+  
+#aries p, #aries h4{
+    color: #b2c9f4;
+}
+
+#taurus p, #taurus h4{
+   color: #58e9a5;
+}
+
+#gemini p , #gemini h4{
+    color: #9e9fdf;
+}
+
+#cancer p, #cancer h4{
+color: #e4a9c1;
+}
+
+#leo p, #leo h4{
+color: #9bc6a1;
+}
+
+#virgo p, #virgo h4{
+color: #7ad5f9;
+}
+
+#libra p, #libra h4{
+color: #b88afb;
+}
+
+#scorpio p, #scorpio h4{
+color: #efca84;
+}
+
+#sagittarius p, #sagittarius h4{
+    color: #8ba1cc;
+}
+
+#capricorn p, #capricorn h4{
+color: #b099ea;
+}
+
+#aquarius p, #aquarius h4{
+    color: #cbb2eb;
+}
+
+#pisces p, #pisces h4{
+    color: #96d9e3;
+}
