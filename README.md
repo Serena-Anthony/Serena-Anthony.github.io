@@ -1,4 +1,4 @@
-Create a basic HTML-CSS webpage for Zodiac sign Cards
+Created a basic HTML-CSS webpage for Zodiac sign Cards
 
 
 Website :
